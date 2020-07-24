@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.activeMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+.activeMenu .mainLeft {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 120vh;
+  -webkit-clip-path: polygon(0 0, 33% 0, 67% 100%, 0% 100%);
+          clip-path: polygon(0 0, 33% 0, 67% 100%, 0% 100%);
+  color: #1f5cc0;
+}
+
+.activeMenu .mainLeft ul a {
+  text-decoration: none;
+  color: #1f5cc0;
+}
+
+.activeMenu .mainLeft ul a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+}
+
+.activeMenu .mainLeft ul a:hover::before {
+  content: '';
+  display: block;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  height: 50px;
+  position: absolute;
+  left: 0;
+  background-color: #1f5cc0;
+  -webkit-animation-name: Menu;
+          animation-name: Menu;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.activeMenu .mainRight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1f5cc0;
+  height: 120vh;
+  -webkit-clip-path: polygon(33% 0, 100% 0, 100% 100%, 67% 100%);
+          clip-path: polygon(33% 0, 100% 0, 100% 100%, 67% 100%);
+  color: white;
+}
+
+.activeMenu .mainRight ul a {
+  text-decoration: none;
+  color: white;
+  width: auto;
+}
+
+.activeMenu .mainRight ul a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #1f5cc0;
+}
+
+.activeMenu .mainRight ul a:hover::before {
+  content: '';
+  display: block;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  height: 50px;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  -webkit-animation-name: Menu;
+          animation-name: Menu;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.activeMenu .leftSide {
+  position: relative;
+  top: 20%;
+  left: 7%;
+  height: 80%;
+}
+
+.activeMenu .leftSide span {
+  color: grey;
+  font-size: 16px;
+}
+
+.activeMenu .rightSide {
+  position: relative;
+  top: 20%;
+  right: 22%;
+  height: 80%;
+}
+
+.activeMenu ul {
+  list-style-type: none;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.activeMenu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.activeMenu .about {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes Menu {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120%;
+  }
+}
+
+@keyframes Menu {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .activeMenu {
+    position: relative;
+    top: -100px;
+    left: 0;
+    overflow-y: auto;
+  }
+  .activeMenu .mainRight {
+    position: relative;
+    background-color: #1f5cc0;
+    height: 500px;
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 50% 100%);
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 50% 100%);
+    padding: 50px;
+    color: white;
+  }
+  .activeMenu .mainLeft {
+    position: relative;
+    background-color: white;
+    height: 500px;
+    -webkit-clip-path: polygon(0 0, 10% 0, 90% 100%, 0% 100%);
+            clip-path: polygon(0 0, 10% 0, 90% 100%, 0% 100%);
+    color: #1f5cc0;
+    padding: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
