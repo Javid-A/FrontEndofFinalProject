@@ -50,7 +50,6 @@ header {
         sans-serif;
         .mainLeft {
             position: absolute;
-            opacity: 1;
             top: 0;
             left: 0;
             background: transparentize($color: white, $amount: 0.1);
@@ -663,6 +662,132 @@ header {
         }
         .about {
             display: none !important;
+        }
+    }
+}
+
+#Slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+    .sliderCard {
+        position: relative;
+        background-color: #fff;
+        width: 250px;
+        min-height: 380px;
+        margin: 0 auto;
+        .content {
+            width: 250px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+        }
+        .sliderImage {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            a {
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                display: flex;
+                justify-content: center;
+                width: 70%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .swiper-slide {
+        width: 250px;
+    }
+}
+
+#Books {
+    .cardSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transform-style: preserve-3d;
+        .bookCard {
+            position: relative;
+            width: 260px;
+            height: 320px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            &:hover {
+                .box {
+                    transform: rotateY(180deg);
+                }
+            }
+            .box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: 1s ease;
+                .imgBox {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .contentBox {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform-style: preserve-3d;
+                    background-color: #333;
+                    backface-visibility: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: rotateY(180deg);
+                    div {
+                        transform-style: preserve-3d;
+                        padding: 30px;
+                        height: 260px;
+                        background: linear-gradient(45deg, #fe0061, #ffeb3b);
+                        transform: translateZ(100px);
+                        h2 {
+                            color: #fff;
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            color: #fff;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
