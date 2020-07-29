@@ -892,7 +892,8 @@ header .menu #sandwich {
 
 #Slider .sliderCard {
   position: relative;
-  background-color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#e0eafc), to(#cfdef3));
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   width: 250px;
   min-height: 380px;
   margin: 0 auto;
@@ -900,6 +901,7 @@ header .menu #sandwich {
 
 #Slider .sliderCard .content {
   width: 250px;
+  height: 130px;
   padding-top: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -925,7 +927,6 @@ header .menu #sandwich {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #000;
 }
 
 #Slider .sliderCard .sliderImage a {
@@ -948,7 +949,30 @@ header .menu #sandwich {
   width: 250px;
 }
 
-#Books .cardSection {
+.Books {
+  border-top: 1px solid gray;
+  padding: 60px 0;
+}
+
+.Books .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Books .title a {
+  margin-left: 50px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #1f5cc0;
+}
+
+.Books .title a:hover {
+  color: #229bff;
+}
+
+.Books .cardSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,23 +988,23 @@ header .menu #sandwich {
           transform-style: preserve-3d;
 }
 
-#Books .cardSection .bookCard {
+.Books .cardSection .bookCard {
   position: relative;
-  width: 260px;
-  height: 320px;
-  margin: 20px;
+  width: 210px;
+  height: 280px;
+  margin: 30px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
-#Books .cardSection .bookCard:hover .box {
+.Books .cardSection .bookCard:hover .box {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-#Books .cardSection .bookCard .box {
+.Books .cardSection .bookCard .box {
   position: absolute;
   top: 0;
   left: 0;
@@ -992,7 +1016,7 @@ header .menu #sandwich {
   transition: 1s ease;
 }
 
-#Books .cardSection .bookCard .box .imgBox {
+.Books .cardSection .bookCard .box .imgBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -1000,7 +1024,7 @@ header .menu #sandwich {
   height: 100%;
 }
 
-#Books .cardSection .bookCard .box .imgBox img {
+.Books .cardSection .bookCard .box .imgBox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1010,7 +1034,7 @@ header .menu #sandwich {
      object-fit: cover;
 }
 
-#Books .cardSection .bookCard .box .contentBox {
+.Books .cardSection .bookCard .box .contentBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -1034,24 +1058,50 @@ header .menu #sandwich {
           transform: rotateY(180deg);
 }
 
-#Books .cardSection .bookCard .box .contentBox div {
+.Books .cardSection .bookCard .box .contentBox div {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  padding: 30px;
-  height: 260px;
+  padding: 15px;
+  height: 210px;
   background: linear-gradient(45deg, #fe0061, #ffeb3b);
   -webkit-transform: translateZ(100px);
           transform: translateZ(100px);
 }
 
-#Books .cardSection .bookCard .box .contentBox div h2 {
+.Books .cardSection .bookCard .box .contentBox div h2 {
   color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
 }
 
-#Books .cardSection .bookCard .box .contentBox div p {
+.Books .cardSection .bookCard .box .contentBox div p {
   color: #fff;
   font-size: 13px;
+}
+
+#CategoryParallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#CategoryParallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
