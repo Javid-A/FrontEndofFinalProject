@@ -804,20 +804,63 @@ header {
     }
 }
 
-#CategoryParallax {
-    position: relative;
+#Category {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 50%;
-        width: 50%;
-        object-fit: cover;
+    .title {
+        display: flex;
+        a {
+            margin-left: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            color: $primary_color;
+            &:hover {
+                color: rgb(34, 155, 255)
+            }
+        }
+    }
+    .categories {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        .category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            font-family: 'Kanit', sans-serif;
+            flex: 1 1 0;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: flex 0.8s ease;
+            a {
+                text-decoration: none;
+                color: white;
+                transform: rotateZ(90deg)
+            }
+            &:hover {
+                flex: 3 1 0;
+            }
+        }
+        .category-1 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
+        .category-2 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
+        .category-3 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
+        .category-4 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
+        .category-5 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
+        .category-6 {
+            background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+        }
     }
 }
