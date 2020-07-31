@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: 'Questrial', sans-serif;
 }
 
 header {
@@ -30,8 +32,49 @@ header .menu {
           justify-content: flex-end;
 }
 
-header .menu span {
+header .menu .cart i {
+  font-size: 22px;
   cursor: pointer;
+}
+
+header .menu .cart sup {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header .menu span {
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu span::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #1f5cc0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu span:hover {
+  color: #1abc9c;
+}
+
+header .menu span:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 header .menu #sandwich {
@@ -250,6 +293,10 @@ header .menu #sandwich {
     font-weight: bold;
     display: none;
   }
+  #Category {
+    padding: 30px 0;
+    width: 100%;
+  }
   #Category .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -261,6 +308,9 @@ header .menu #sandwich {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: #1f5cc0;
+  }
+  #Category .title a h3 {
+    font-weight: bold;
   }
   #Category .title a:hover {
     color: #229bff;
@@ -331,7 +381,7 @@ header .menu #sandwich {
     background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
   }
   #Footer {
-    padding-top: 120px;
+    padding: 30px 0;
   }
   #Footer .footerNav {
     display: -webkit-box;
@@ -612,7 +662,6 @@ header .menu #sandwich {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 40px;
   }
 }
 
@@ -1022,6 +1071,10 @@ header .menu #sandwich {
   .activeMenu .about {
     display: none !important;
   }
+  #Category {
+    padding: 30px 0;
+    width: 100%;
+  }
   #Category .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1033,6 +1086,9 @@ header .menu #sandwich {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: #1f5cc0;
+  }
+  #Category .title a h3 {
+    font-weight: bold;
   }
   #Category .title a:hover {
     color: #229bff;
@@ -1102,7 +1158,7 @@ header .menu #sandwich {
     background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
   }
   #Footer {
-    padding-top: 120px;
+    padding: 30px;
   }
   #Footer .footerNav {
     display: -webkit-box;
@@ -1389,7 +1445,6 @@ header .menu #sandwich {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 40px;
   }
 }
 
@@ -1606,6 +1661,10 @@ header .menu #sandwich {
   .activeMenu .about {
     display: none !important;
   }
+  #Category {
+    padding: 30px 0;
+    width: 100%;
+  }
   #Category .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1617,6 +1676,9 @@ header .menu #sandwich {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: #1f5cc0;
+  }
+  #Category .title a h3 {
+    font-weight: bold;
   }
   #Category .title a:hover {
     color: #229bff;
@@ -1761,8 +1823,7 @@ header .menu #sandwich {
 }
 
 .Books {
-  border-top: 1px solid gray;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .Books .title {
@@ -1777,6 +1838,10 @@ header .menu #sandwich {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #1f5cc0;
+}
+
+.Books .title a h3 {
+  font-weight: bold;
 }
 
 .Books .title a:hover {
@@ -1888,5 +1953,101 @@ header .menu #sandwich {
 .Books .cardSection .bookCard .box .contentBox div p {
   color: #fff;
   font-size: 13px;
+}
+
+#Sale {
+  padding: 30px 0;
+}
+
+#Sale .left {
+  height: 200px;
+}
+
+#Sale .left a img {
+  width: 100%;
+  height: 100%;
+}
+
+#Sale .right {
+  height: 200px;
+}
+
+#Sale .right a img {
+  width: 100%;
+  height: 100%;
+}
+
+#BookOfMonth {
+  padding: 30px 0;
+}
+
+#BookOfMonth .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#BookOfMonth .title a {
+  margin-left: 50px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #1f5cc0;
+}
+
+#BookOfMonth .title a h3 {
+  font-weight: bold;
+}
+
+#BookOfMonth .title a:hover {
+  color: #229bff;
+}
+
+#BookOfMonth .book {
+  height: 230px;
+}
+
+#BookOfMonth .book img {
+  width: 100%;
+  height: 100%;
+}
+
+#BookOfMonth .description p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+#BookOfMonth .books .similar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#BookOfMonth .books .similar .cover {
+  width: 25%;
+}
+
+#BookOfMonth .books .similar .cover img {
+  width: 100%;
+  height: 90%;
+}
+
+#BookOfMonth .saleBook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#BookOfMonth .saleBook img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
