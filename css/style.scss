@@ -12,6 +12,59 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+#Search {
+    .search {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        .search-box {
+            background: $primary_color;
+            height: 50px;
+            padding: 10px;
+            width: 50px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #searchBtn {
+                color: white;
+                cursor: pointer;
+            }
+            #closeBtn {
+                color: white;
+                display: none;
+                cursor: pointer;
+            }
+            #form {
+                display: none;
+                height: 100%;
+            }
+            .search-btn {
+                color: #e84118;
+                background: white;
+                border: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                transition: 0.4s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .search-txt {
+                border: none;
+                background: none;
+                width: 240px;
+                padding-left: 10px;
+                color: red;
+                transition: .4s;
+                font-size: 16px;
+                // outline: none;
+            }
+        }
+    }
+}
+
 header {
     position: fixed;
     top: 0;
