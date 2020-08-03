@@ -18,7 +18,7 @@ $(document).ready(function() {
             $(".rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
         }, 300)
         setTimeout(function leftSide() {
-            $(".socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
+            $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
         }, 200)
     })
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
             $(".rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
         }, 300)
         setTimeout(function leftSide() {
-            $(".socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
+            $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
         }, 200)
     })
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
             $(".rightSide").css("display", "none")
         }, 300)
         setTimeout(function leftSide() {
-            $(".socialUl").css("display", "none")
+            $(".activeMenu .socialUl").css("display", "none")
         }, 300)
         setTimeout(function leftSide() {
                 $(".leftSide").css("display", "none")
@@ -107,6 +107,8 @@ $(document).ready(function() {
         }, 100)
         setTimeout(function CloseBtn() {
             $("#closeBtn").css("display", "none")
+            $("#Search .search-txt").val("")
+
         }, 600)
         setTimeout(function SearchBtn() {
             $("#searchBtn").css("display", "block")
@@ -121,7 +123,7 @@ $(document).ready(function() {
             $(".search-box").css("transform", "rotateZ(-360deg)")
             $(".search-box").css("border-radius", "0px")
             $(".search-box").css("background", "#236bdf")
-        }, 800)
+        }, 700)
     })
 
     // Slider start

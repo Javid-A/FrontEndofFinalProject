@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
@@ -16,13 +17,13 @@ body {
   position: fixed;
   top: 50%;
   right: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 #Search .search .search-box {
   background: #236bdf;
   min-height: 50px;
-  padding: 10px;
+  padding: 0 10px;
   width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,11 +65,18 @@ body {
 }
 
 #Search .search .search-box #form ul {
+  margin-top: 13px;
   list-style: none;
 }
 
-#Search .search .search-box #form ul li {
-  line-height: 35px;
+#Search .search .search-box #form ul .searchLi {
+  padding: 10px 0;
+  border-bottom: 1px ridge white;
+}
+
+#Search .search .search-box #form ul .searchLi a {
+  text-decoration: none;
+  color: white;
 }
 
 #Search .search .search-box .search-btn {
@@ -77,9 +85,8 @@ body {
   border: none;
   width: 30px;
   height: 30px;
+  margin-top: 11px;
   border-radius: 50%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2138,6 +2145,132 @@ header .menu #sandwich {
 }
 
 #BookOfMonth .saleBook img {
+  width: 100%;
+  height: 100%;
+}
+
+#saleBooks {
+  padding: 110px 0 80px 0;
+}
+
+#saleBooks .content .title h3 {
+  font-weight: bold;
+}
+
+#saleBooks .content .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#saleBooks .content .options .option ul {
+  list-style: none;
+}
+
+#saleBooks .content .options .option ul li::before {
+  content: '☑';
+  color: turquoise;
+  margin-right: 5px;
+  font-size: 23px;
+}
+
+#saleBooks .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#newBooks .title h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#newBooks .filter-section {
+  border: 1px solid #d4d4d4;
+  padding: 15px;
+}
+
+#newBooks .filter-section .filter-wrapper h6 {
+  font-weight: bold;
+}
+
+#newBooks .filter-section .filter-wrapper ul {
+  list-style: none;
+}
+
+#newBooks .filter-section .filter-wrapper ul li {
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+#newBooks .filter-section .filter-wrapper ul li a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #236bdf;
+}
+
+#newBooks .filter-section .filter-wrapper ul li a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#newBooks .filter-section .filter-wrapper ul li a:hover {
+  color: tomato;
+}
+
+#newBooks .filter-section .filter-wrapper ul li a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+#newBooks .filter-section .filter-wrapper .count {
+  width: auto;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+#newBooks .filter-section .filter-wrapper .publisher {
+  overflow-y: hidden;
+  max-height: 315px;
+}
+
+#newBooks .filter-section .filter-wrapper .activeFilters {
+  min-height: 50px;
+}
+
+#newBooks .book-section .books .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#newBooks .book-section .books .book .content {
+  padding: 0 20px;
+}
+
+#newBooks .book-section .books .book .image img {
   width: 100%;
   height: 100%;
 }
