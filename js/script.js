@@ -145,4 +145,12 @@ $(document).ready(function() {
     });
     // Slider end
 
+    // Filter Start
+    let Z = 0;
+    $("#newBooks .filter-section .filter-slide").click(function() {
+            $(".filter-wrapper").slideToggle()
+            $("#newBooks .filter-section .filter-slide i").css("transform", `rotateZ(${Z+=180}deg)`)
+        })
+        // Filter End
+
 });
