@@ -153,4 +153,57 @@ $(document).ready(function() {
         })
         // Filter End
 
+    // Contact Start
+    $("#Contact .contact-info .right").click(function() {
+        $(".contact-info").css("width", "300px")
+        $(".contact-info").css("padding", "40px")
+        $(this).css("opacity", "0")
+        setTimeout(function Icon() {
+            $("#Contact .contact-info .right").css("display", "none")
+        }, 400)
+        setTimeout(function Icon() {
+            $("#Contact .contact-info .left").css("display", "block")
+        }, 400)
+        setTimeout(function Icon() {
+            $("#Contact .contact-info .left").css("opacity", "1")
+        }, 500)
+        setTimeout(function Info() {
+            $("#Contact .contact-info h2").css("display", "block")
+            $("#Contact .contact-info .info").css("display", "block")
+            $("#Contact .contact-info .social").css("display", "block")
+        }, 400)
+        setTimeout(function Info() {
+            $("#Contact .contact-info h2").css("opacity", "1")
+            $("#Contact .contact-info .info").css("opacity", "1")
+            $("#Contact .contact-info .social").css("opacity", "1")
+        }, 500)
+    })
+    $("#Contact .contact-info .left").click(function() {
+            $(".contact-info").css("padding", "0px")
+            $(this).css("opacity", "0")
+            $("#Contact .contact-info h2").css("opacity", "0")
+            $("#Contact .contact-info .info").css("opacity", "0")
+            $("#Contact .contact-info .social").css("opacity", "0")
+            setTimeout(function Width() {
+                $(".contact-info").css("width", "40px")
+
+            }, 100)
+            setTimeout(function Icon() {
+                $("#Contact .contact-info .left").css("display", "none")
+            }, 400)
+            setTimeout(function Icon() {
+                $("#Contact .contact-info .right").css("display", "block")
+            }, 400)
+            setTimeout(function Icon() {
+                $("#Contact .contact-info .right").css("opacity", "1")
+            }, 500)
+            setTimeout(function Info() {
+                $("#Contact .contact-info h2").css("display", "none")
+                $("#Contact .contact-info .info").css("display", "none")
+                $("#Contact .contact-info .social").css("display", "none")
+            }, 400)
+
+        })
+        // Contact End
+
 });
