@@ -12,6 +12,11 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 #Search {
     .search {
         position: fixed;
@@ -372,6 +377,48 @@ header {
             line-height: 10px;
             font-weight: bold;
             display: none;
+        }
+    }
+    .CategoriesPage {
+        margin-top: 100px;
+        padding: 30px 0;
+        width: 100%;
+        .categories {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            height: 70vh;
+            .category {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Kanit', sans-serif;
+                flex: 1 1 0;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: flex 0.8s ease;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transform: rotateZ(90deg)
+                }
+                &:hover {
+                    flex: 1.8 1 0;
+                }
+            }
+            .category-1 {
+                // background-image: url(../image/sacrament.jpg);
+            }
+            .category-2 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
+            .category-3 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
         }
     }
     #Category {
@@ -911,6 +958,48 @@ header {
             display: none !important;
         }
     }
+    .CategoriesPage {
+        margin-top: 100px;
+        padding: 30px 0;
+        width: 100%;
+        .categories {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            height: 70vh;
+            .category {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Kanit', sans-serif;
+                flex: 1 1 0;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: flex 0.8s ease;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transform: rotateZ(90deg)
+                }
+                &:hover {
+                    flex: 1.8 1 0;
+                }
+            }
+            .category-1 {
+                // background-image: url(../image/sacrament.jpg);
+            }
+            .category-2 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
+            .category-3 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
+        }
+    }
     #Category {
         padding: 30px 0;
         width: 100%;
@@ -1391,6 +1480,48 @@ header {
         }
         .about {
             display: none !important;
+        }
+    }
+    .CategoriesPage {
+        margin-top: 100px;
+        padding: 30px 0;
+        width: 100%;
+        .categories {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            height: 70vh;
+            .category {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: 'Kanit', sans-serif;
+                flex: 1 1 0;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: flex 0.8s ease;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transform: rotateZ(90deg)
+                }
+                &:hover {
+                    flex: 1.8 1 0;
+                }
+            }
+            .category-1 {
+                // background-image: url(../image/sacrament.jpg);
+            }
+            .category-2 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
+            .category-3 {
+                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+            }
         }
     }
     #Category {
@@ -2119,6 +2250,9 @@ header {
             top: 45%;
             cursor: pointer;
             transition: 0.3s;
+            &:hover {
+                color: $primary_color;
+            }
         }
         .left {
             position: absolute;
@@ -2130,6 +2264,9 @@ header {
             top: 45%;
             transition: 0.3s;
             cursor: pointer;
+            &:hover {
+                color: $primary_color;
+            }
         }
         position: absolute;
         z-index: 3;

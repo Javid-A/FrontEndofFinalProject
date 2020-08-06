@@ -13,6 +13,11 @@ body {
   font-family: 'Questrial', sans-serif;
 }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 #Search .search {
   position: fixed;
   top: 50%;
@@ -441,6 +446,58 @@ header .menu #sandwich {
     line-height: 10px;
     font-weight: bold;
     display: none;
+  }
+  .CategoriesPage {
+    margin-top: 100px;
+    padding: 30px 0;
+    width: 100%;
+  }
+  .CategoriesPage .categories {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 70vh;
+  }
+  .CategoriesPage .categories .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: -webkit-box-flex 0.8s ease;
+    transition: -webkit-box-flex 0.8s ease;
+    transition: flex 0.8s ease;
+    transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+  }
+  .CategoriesPage .categories .category a {
+    text-decoration: none;
+    color: white;
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  .CategoriesPage .categories .category:hover {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8 1 0px;
+            flex: 1.8 1 0;
   }
   #Category {
     padding: 30px 0;
@@ -1220,6 +1277,58 @@ header .menu #sandwich {
   .activeMenu .about {
     display: none !important;
   }
+  .CategoriesPage {
+    margin-top: 100px;
+    padding: 30px 0;
+    width: 100%;
+  }
+  .CategoriesPage .categories {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 70vh;
+  }
+  .CategoriesPage .categories .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: -webkit-box-flex 0.8s ease;
+    transition: -webkit-box-flex 0.8s ease;
+    transition: flex 0.8s ease;
+    transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+  }
+  .CategoriesPage .categories .category a {
+    text-decoration: none;
+    color: white;
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  .CategoriesPage .categories .category:hover {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8 1 0px;
+            flex: 1.8 1 0;
+  }
   #Category {
     padding: 30px 0;
     width: 100%;
@@ -1823,6 +1932,58 @@ header .menu #sandwich {
   }
   .activeMenu .about {
     display: none !important;
+  }
+  .CategoriesPage {
+    margin-top: 100px;
+    padding: 30px 0;
+    width: 100%;
+  }
+  .CategoriesPage .categories {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 70vh;
+  }
+  .CategoriesPage .categories .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: -webkit-box-flex 0.8s ease;
+    transition: -webkit-box-flex 0.8s ease;
+    transition: flex 0.8s ease;
+    transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+  }
+  .CategoriesPage .categories .category a {
+    text-decoration: none;
+    color: white;
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  .CategoriesPage .categories .category:hover {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8 1 0px;
+            flex: 1.8 1 0;
   }
   #Category {
     padding: 30px 0;
@@ -2799,6 +2960,10 @@ header .menu #sandwich {
   transition: 0.3s;
 }
 
+#Contact .contact-info .right:hover {
+  color: #236bdf;
+}
+
 #Contact .contact-info .left {
   position: absolute;
   opacity: 0;
@@ -2810,6 +2975,10 @@ header .menu #sandwich {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+}
+
+#Contact .contact-info .left:hover {
+  color: #236bdf;
 }
 
 #Contact .contact-info h2 {
