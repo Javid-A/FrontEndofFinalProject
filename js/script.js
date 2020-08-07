@@ -206,4 +206,13 @@ $(document).ready(function() {
         })
         // Contact End
 
+    // Register Start
+    $("#Register .left-panel #sign-up-btn").click(function() {
+        $("#Register").addClass("sign-up-mode")
+    })
+    $("#Register .right-panel #sign-in-btn").click(function() {
+            $("#Register").removeClass("sign-up-mode")
+        })
+        // Register End
+
 });
