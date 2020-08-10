@@ -207,12 +207,56 @@ $(document).ready(function() {
         // Contact End
 
     // Register Start
+
     $("#Register .left-panel #sign-up-btn").click(function() {
         $("#Register").addClass("sign-up-mode")
     })
     $("#Register .right-panel #sign-in-btn").click(function() {
-            $("#Register").removeClass("sign-up-mode")
-        })
-        // Register End
+        $("#Register").removeClass("sign-up-mode")
+    })
+
+    // Register End
+
+    // Profile Start
+
+    $("#ProfilePhoto .photo-options .edit").click(function() {
+        $("#ProfilePhoto .photo-options .photo").css("width", "60px")
+        $("#ProfilePhoto .photo-options .photo").css("height", "60px")
+        $("#ProfilePhoto .photo-options .photo i").css("opacity", "0")
+        $("#ProfilePhoto .photo-options .options").css("display", "block")
+        setTimeout(() => {
+            $("#ProfilePhoto .photo-options .photo i").css("display", "none")
+        }, 200);
+        setTimeout(() => {
+            $("#ProfilePhoto .photo-options .photo img").css("display", "none")
+        }, 400);
+        setTimeout(() => {
+            $("#ProfilePhoto .photo-options .options").css("width", "220px")
+            $("#ProfilePhoto .photo-options .options").css("height", "220px")
+        }, 400);
+        setTimeout(() => {
+            $("#ProfilePhoto .photo-options .options").css("opacity", "1")
+        }, 200);
+    })
+
+    $("#ProfilePhoto .photo-options .close").click(function() {
+        $("#ProfilePhoto .photo-options .options").css("width", "100px")
+        $("#ProfilePhoto .photo-options .options").css("height", "100px")
+        $("#ProfilePhoto .photo-options .options").css("opacity", "0")
+        $("#ProfilePhoto .photo-options .photo img").css("display", "block")
+        $("#ProfilePhoto .photo-options .photo i").css("display", "block")
+
+        setTimeout(() => {
+            $("#ProfilePhoto .photo-options .photo").css("width", "150px")
+            $("#ProfilePhoto .photo-options .photo").css("height", "150px")
+            $("#ProfilePhoto .photo-options .photo i").css("opacity", "1")
+            $("#ProfilePhoto .photo-options .options").css("display", "none")
+            $("#ProfilePhoto .photo-options .options").css("opacity", "0")
+
+        }, 400);
+    })
+
+    // Profile End
+
 
 });

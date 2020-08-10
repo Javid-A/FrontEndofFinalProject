@@ -3250,3 +3250,130 @@ header {
         }
     }
 }
+
+#ProfilePhoto {
+    padding: 100px 0;
+    .photo-options {
+        width: 100%;
+        border-radius: 20px;
+        background-color: #4481eb;
+        position: relative;
+        min-height: 300px;
+        .photo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            img {
+                border-radius: 50%;
+                width: 100%;
+                transition: 0.4s;
+            }
+            i {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 18px;
+                color: white;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+        .options {
+            display: none;
+            opacity: 0;
+            width: 100px;
+            height: 100px;
+            background: transparentize($color: white, $amount: 0.4);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            transition: 0.4s;
+            .close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+            div {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .ppChange {
+                font-size: 18px;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                i {
+                    cursor: pointer;
+                }
+            }
+            .pp {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .settings {
+                font-size: 18px;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                cursor: pointer;
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+#ProfileAbout {
+    .card-favorite {
+        .face {
+            .content2 {
+                .book {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 10px;
+                    .image {
+                        width: 60px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .title {
+                        width: 250px;
+                        line-height: 10px;
+                        h6 {
+                            font-weight: bold;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

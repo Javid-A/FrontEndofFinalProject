@@ -4137,4 +4137,165 @@ header .menu #sandwich {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
 }
+
+#ProfilePhoto {
+  padding: 100px 0;
+}
+
+#ProfilePhoto .photo-options {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #4481eb;
+  position: relative;
+  min-height: 300px;
+}
+
+#ProfilePhoto .photo-options .photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ProfilePhoto .photo-options .photo img {
+  border-radius: 50%;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#ProfilePhoto .photo-options .photo i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#ProfilePhoto .photo-options .options {
+  display: none;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#ProfilePhoto .photo-options .options .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#ProfilePhoto .photo-options .options div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ProfilePhoto .photo-options .options .ppChange {
+  font-size: 18px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+#ProfilePhoto .photo-options .options .ppChange i {
+  cursor: pointer;
+}
+
+#ProfilePhoto .photo-options .options .pp {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#ProfilePhoto .photo-options .options .pp img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#ProfilePhoto .photo-options .options .settings {
+  font-size: 18px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+
+#ProfilePhoto .photo-options .options .settings i {
+  cursor: pointer;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .image {
+  width: 60px;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .image img {
+  width: 100%;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .title {
+  width: 250px;
+  line-height: 10px;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .title h6 {
+  font-weight: bold;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .title p {
+  font-size: 14px;
+}
+
+#ProfileAbout .card-favorite .face .content2 .book .title span {
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */
