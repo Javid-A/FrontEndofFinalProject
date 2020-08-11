@@ -182,6 +182,7 @@ header .menu span:hover::before {
 
 header .menu #sandwich {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
@@ -1018,18 +1019,6 @@ header .menu #sandwich {
     height: 100%;
   }
   .CategoriesPage .categories .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0px;
             flex: 1 1 0;
@@ -1047,9 +1036,9 @@ header .menu #sandwich {
             transform: rotateZ(90deg);
   }
   .CategoriesPage .categories .category:hover {
-    -webkit-box-flex: 1.8;
-        -ms-flex: 1.8 1 0px;
-            flex: 1.8 1 0;
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5 1 0px;
+            flex: 2.5 1 0;
     opacity: 1;
   }
   .CategoriesPage .categories .category-1 {
@@ -1084,38 +1073,29 @@ header .menu #sandwich {
   .CategoriesPage .categories .category-6 {
     background-image: url(../image/tarixi-roman.jpg);
     border: 1px solid white;
-    opacity: 0.7;
+    opacity: 0.85;
     margin-left: 15px;
   }
   .CategoriesPage .categories .category-6 a {
     color: black;
   }
-  .CategoriesPage .categories .category-6 {
-    background-image: url(../image/tarixi-roman.jpg);
+  .CategoriesPage .categories .category-7 {
+    background-image: url(../image/modern-klassika.jpg);
     border: 1px solid white;
-    opacity: 0.7;
+    opacity: 0.85;
     margin-left: 15px;
   }
-  .CategoriesPage .categories .category-6 a {
-    color: black;
-  }
-  .CategoriesPage .categories .category-6 {
-    background-image: url(../image/tarixi-roman.jpg);
+  .CategoriesPage .categories .category-8 {
+    background-image: url(../image/klassika.jpg);
     border: 1px solid white;
-    opacity: 0.7;
+    opacity: 0.85;
     margin-left: 15px;
   }
-  .CategoriesPage .categories .category-6 a {
-    color: black;
-  }
-  .CategoriesPage .categories .category-6 {
-    background-image: url(../image/tarixi-roman.jpg);
+  .CategoriesPage .categories .category-9 {
+    background-image: url(../image/edebi-roman.jpg);
     border: 1px solid white;
-    opacity: 0.7;
+    opacity: 0.85;
     margin-left: 15px;
-  }
-  .CategoriesPage .categories .category-6 a {
-    color: black;
   }
   #Category {
     padding: 30px 0;
@@ -1911,30 +1891,20 @@ header .menu #sandwich {
             flex-direction: row;
     height: 70vh;
   }
+  .CategoriesPage .categories a {
+    width: 100px;
+    height: 100%;
+  }
   .CategoriesPage .categories .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5 1 0px;
+            flex: 0.5 1 0;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-transition: -webkit-box-flex 0.8s ease;
-    transition: -webkit-box-flex 0.8s ease;
-    transition: flex 0.8s ease;
-    transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
   }
   .CategoriesPage .categories .category a {
     text-decoration: none;
@@ -1943,9 +1913,66 @@ header .menu #sandwich {
             transform: rotateZ(90deg);
   }
   .CategoriesPage .categories .category:hover {
-    -webkit-box-flex: 1.8;
-        -ms-flex: 1.8 1 0px;
-            flex: 1.8 1 0;
+    -webkit-box-flex: 4;
+        -ms-flex: 4 1 0px;
+            flex: 4 1 0;
+    opacity: 1;
+  }
+  .CategoriesPage .categories .category-1 {
+    background-image: url(../image/elmi-kutlevi.jpg);
+    opacity: 0.85;
+    border: 1px solid white;
+  }
+  .CategoriesPage .categories .category-2 {
+    background-image: url(../image/elmi-fantastika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-3 {
+    background-image: url(../image/psixi.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-4 {
+    background-image: url(../image/detektiv.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-5 {
+    background-image: url(../image/tarix.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-6 {
+    background-image: url(../image/tarixi-roman.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-6 a {
+    color: black;
+  }
+  .CategoriesPage .categories .category-7 {
+    background-image: url(../image/modern-klassika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-8 {
+    background-image: url(../image/klassika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-9 {
+    background-image: url(../image/edebi-roman.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
   }
   #Category {
     padding: 30px 0;
@@ -2853,30 +2880,20 @@ header .menu #sandwich {
             flex-direction: row;
     height: 70vh;
   }
+  .CategoriesPage .categories a {
+    width: 100px;
+    height: 100%;
+  }
   .CategoriesPage .categories .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    -webkit-box-flex: 0.3;
+        -ms-flex: 0.3 1 0px;
+            flex: 0.3 1 0;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-transition: -webkit-box-flex 0.8s ease;
-    transition: -webkit-box-flex 0.8s ease;
-    transition: flex 0.8s ease;
-    transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
   }
   .CategoriesPage .categories .category a {
     text-decoration: none;
@@ -2885,9 +2902,66 @@ header .menu #sandwich {
             transform: rotateZ(90deg);
   }
   .CategoriesPage .categories .category:hover {
-    -webkit-box-flex: 1.8;
-        -ms-flex: 1.8 1 0px;
-            flex: 1.8 1 0;
+    -webkit-box-flex: 4;
+        -ms-flex: 4 1 0px;
+            flex: 4 1 0;
+    opacity: 1;
+  }
+  .CategoriesPage .categories .category-1 {
+    background-image: url(../image/elmi-kutlevi.jpg);
+    opacity: 0.85;
+    border: 1px solid white;
+  }
+  .CategoriesPage .categories .category-2 {
+    background-image: url(../image/elmi-fantastika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-3 {
+    background-image: url(../image/psixi.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-4 {
+    background-image: url(../image/detektiv.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-5 {
+    background-image: url(../image/tarix.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-6 {
+    background-image: url(../image/tarixi-roman.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-6 a {
+    color: black;
+  }
+  .CategoriesPage .categories .category-7 {
+    background-image: url(../image/modern-klassika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-8 {
+    background-image: url(../image/klassika.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
+  }
+  .CategoriesPage .categories .category-9 {
+    background-image: url(../image/edebi-roman.jpg);
+    border: 1px solid white;
+    opacity: 0.85;
+    margin-left: 15px;
   }
   #Category {
     padding: 30px 0;
@@ -4139,7 +4213,7 @@ header .menu #sandwich {
 }
 
 #ProfilePhoto {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 
 #ProfilePhoto .photo-options {
@@ -4192,7 +4266,7 @@ header .menu #sandwich {
   opacity: 0;
   width: 100px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4238,6 +4312,8 @@ header .menu #sandwich {
 
 #ProfilePhoto .photo-options .options .ppChange i {
   cursor: pointer;
+  font-size: 22px;
+  color: #236bdf;
 }
 
 #ProfilePhoto .photo-options .options .pp {
@@ -4263,9 +4339,131 @@ header .menu #sandwich {
 
 #ProfilePhoto .photo-options .options .settings i {
   cursor: pointer;
+  font-size: 22px;
+  color: #236bdf;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book {
+#ProfileAbout {
+  padding-bottom: 80px;
+}
+
+#ProfileAbout .card-favorite {
+  cursor: pointer;
+  position: relative;
+}
+
+#ProfileAbout .card-favorite .face {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ProfileAbout .card-favorite .face.face1 {
+  height: 150px;
+  position: relative;
+  background-color: #BABFD1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  text-align: center;
+}
+
+#ProfileAbout .card-favorite .face.face1 .content1 {
+  opacity: 0.3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ProfileAbout .card-favorite .face.face1 .content1 i {
+  font-size: 25px;
+  color: white;
+}
+
+#ProfileAbout .card-favorite .face.face1 .content1 h3 {
+  font-weight: bold;
+}
+
+#ProfileAbout .card-favorite:hover .face.face1 .content1 {
+  opacity: 1;
+}
+
+#ProfileAbout .content2 .sale {
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+#ProfileAbout .content2 .sale ul {
+  list-style: none;
+  text-align: center;
+}
+
+#ProfileAbout .content2 .sale ul li {
+  padding-top: 20px;
+  border-bottom: 1px ridge;
+}
+
+#ProfileAbout .content2 .sale ul li h6 {
+  margin: 0;
+}
+
+#ProfileAbout .face.face2 {
+  position: relative;
+  background-color: white;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+#ProfileAbout .about {
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+#ProfileAbout .about h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#ModalSales .modal-body ul {
+  list-style: none;
+}
+
+#ModalSales .modal-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+  padding-top: 20px;
+  border-bottom: 1px ridge;
+}
+
+#ModalSales .modal-body ul li h6 {
+  margin: 0;
+}
+
+#ModalSales .modal-body .books {
+  display: none;
+}
+
+#ModalSales .modal-body .books .book {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4274,28 +4472,62 @@ header .menu #sandwich {
   padding: 10px;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .image {
+#ModalSales .modal-body .books .book .image {
   width: 60px;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .image img {
+#ModalSales .modal-body .books .book .image img {
   width: 100%;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .title {
-  width: 250px;
+#ModalSales .modal-body .books .book .title {
   line-height: 10px;
+  padding: 0 10px;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .title h6 {
+#ModalSales .modal-body .books .book .title h6 {
   font-weight: bold;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .title p {
+#ModalSales .modal-body .books .book .title p {
   font-size: 14px;
 }
 
-#ProfileAbout .card-favorite .face .content2 .book .title span {
+#ModalSales .modal-body .books .book .title span {
   font-size: 14px;
+}
+
+#ModalSales .modal-body .books .book .title a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #236bdf;
+}
+
+#ModalSales .modal-body .books .book .title a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#ModalSales .modal-body .books .book .title a:hover {
+  color: tomato;
+}
+
+#ModalSales .modal-body .books .book .title a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 /*# sourceMappingURL=style.css.map */

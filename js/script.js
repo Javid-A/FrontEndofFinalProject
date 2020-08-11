@@ -5,17 +5,17 @@ $(document).ready(function() {
         $(".activeMenu").css("animation-name", "MenuEffect")
         $(".activeMenu").css("animation-fill-mode", "forwards")
         $(".activeMenu").css("animation-duration", "0.4s")
-        $(".mainRight").css("animation-name", "MenuEffect")
-        $(".mainRight").css("animation-fill-mode", "forwards")
-        $(".mainRight").css("animation-duration", "0.4s")
-        $(".mainRight").css("animation-delay", "0.2s")
-        $(".mainRight").css("animation-timing-function", "ease")
-        $(".about").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
+        $(".activeMenu .mainRight").css("animation-name", "MenuEffect")
+        $(".activeMenu .mainRight").css("animation-fill-mode", "forwards")
+        $(".activeMenu .mainRight").css("animation-duration", "0.4s")
+        $(".activeMenu .mainRight").css("animation-delay", "0.2s")
+        $(".activeMenu .mainRight").css("animation-timing-function", "ease")
+        $(".activeMenu .about").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
         setTimeout(function leftSide() {
-            $(".leftSide").css("display", "block").addClass("animate__animated animate__fadeInLeftBig")
+            $(".activeMenu .leftSide").css("display", "block").addClass("animate__animated animate__fadeInLeftBig")
         }, 200)
         setTimeout(function leftSide() {
-            $(".rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
+            $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -28,17 +28,17 @@ $(document).ready(function() {
         $(".activeMenu").css("animation-name", "MenuEffect")
         $(".activeMenu").css("animation-fill-mode", "forwards")
         $(".activeMenu").css("animation-duration", "0.4s")
-        $(".mainRight").css("animation-name", "MenuEffect")
-        $(".mainRight").css("animation-fill-mode", "forwards")
-        $(".mainRight").css("animation-duration", "0.4s")
-        $(".mainRight").css("animation-delay", "0.2s")
-        $(".mainRight").css("animation-timing-function", "ease")
-        $(".about").css("display", "none")
+        $(".activeMenu .mainRight").css("animation-name", "MenuEffect")
+        $(".activeMenu .mainRight").css("animation-fill-mode", "forwards")
+        $(".activeMenu .mainRight").css("animation-duration", "0.4s")
+        $(".activeMenu .mainRight").css("animation-delay", "0.2s")
+        $(".activeMenu .mainRight").css("animation-timing-function", "ease")
+        $(".activeMenu .about").css("display", "none")
         setTimeout(function leftSide() {
-            $(".leftSide").css("display", "block").addClass("animate__animated animate__fadeInLeftBig")
+            $(".activeMenu .leftSide").css("display", "block").addClass("animate__animated animate__fadeInLeftBig")
         }, 200)
         setTimeout(function leftSide() {
-            $(".rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
+            $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -48,21 +48,17 @@ $(document).ready(function() {
 
     $("#close").click(function() {
         setTimeout(function leftSide() {
-            $(".about").css("display", "none")
+            $(".activeMenu .about").css("display", "none")
         }, 300)
         setTimeout(function leftSide() {
-            $(".rightSide").css("display", "none")
+            $(".activeMenu .rightSide").css("display", "none")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "none")
         }, 300)
         setTimeout(function leftSide() {
-                $(".leftSide").css("display", "none")
-            }, 300)
-            // $(".about").css("display", "none")
-            // $(".socialUl").css("display", "none")
-            // $(".rightSide").css("display", "none")
-            // $(".leftSide").css("display", "none")
+            $(".activeMenu .leftSide").css("display", "none")
+        }, 300)
         $(".activeMenu").fadeOut()
     })
 
@@ -254,6 +250,26 @@ $(document).ready(function() {
             $("#ProfilePhoto .photo-options .options").css("opacity", "0")
 
         }, 400);
+    })
+
+    $("#ProfileAbout .card-favorite").click(function() {
+        $("#ProfileAbout .face2").slideToggle()
+        $("#ProfileAbout .face2").css("display", "flex")
+    })
+
+    $("#ModalSales .modal-body li").click(function() {
+        $(this).next().slideToggle()
+        $("#ModalSales .modal-body .books").not($(this).next()).slideUp()
+        if ($("i", this).attr('class') == 'fas fa-angle-down') {
+            setTimeout(() => {
+                $("i", this).attr('class', 'fas fa-angle-up')
+                $("#ModalSales .modal-body li i").not($("i", this)).attr('class', 'fas fa-angle-down')
+            }, 100);
+        } else {
+            setTimeout(() => {
+                $("i", this).attr('class', 'fas fa-angle-down')
+            }, 100);
+        }
     })
 
     // Profile End

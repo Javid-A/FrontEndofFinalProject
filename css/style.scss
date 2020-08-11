@@ -140,6 +140,7 @@ header {
         }
         #sandwich {
             display: none;
+            cursor: pointer;
         }
     }
 }
@@ -879,12 +880,6 @@ header {
                 height: 100%;
             }
             .category {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 24px;
-                font-weight: bold;
-                font-family: 'Kanit', sans-serif;
                 flex: 1 1 0;
                 height: 100%;
                 background-position: center;
@@ -897,7 +892,7 @@ header {
                     transform: rotateZ(90deg);
                 }
                 &:hover {
-                    flex: 1.8 1 0;
+                    flex: 2.5 1 0;
                     opacity: 1;
                 }
             }
@@ -905,8 +900,6 @@ header {
                 background-image: url(../image/elmi-kutlevi.jpg);
                 opacity: 0.85;
                 border: 1px solid white;
-                // background: transparentize($color: white, $amount: 0.3);
-                // border: 1px solid white;
             }
             .category-2 {
                 background-image: url(../image/elmi-fantastika.jpg);
@@ -935,37 +928,28 @@ header {
             .category-6 {
                 background-image: url(../image/tarixi-roman.jpg);
                 border: 1px solid white;
-                opacity: 0.7;
+                opacity: 0.85;
                 a {
                     color: rgb(0, 0, 0);
                 }
                 margin-left: 15px;
             }
-            .category-6 {
-                background-image: url(../image/tarixi-roman.jpg);
+            .category-7 {
+                background-image: url(../image/modern-klassika.jpg);
                 border: 1px solid white;
-                opacity: 0.7;
-                a {
-                    color: rgb(0, 0, 0);
-                }
+                opacity: 0.85;
                 margin-left: 15px;
             }
-            .category-6 {
-                background-image: url(../image/tarixi-roman.jpg);
+            .category-8 {
+                background-image: url(../image/klassika.jpg);
                 border: 1px solid white;
-                opacity: 0.7;
-                a {
-                    color: rgb(0, 0, 0);
-                }
+                opacity: 0.85;
                 margin-left: 15px;
             }
-            .category-6 {
-                background-image: url(../image/tarixi-roman.jpg);
+            .category-9 {
+                background-image: url(../image/edebi-roman.jpg);
                 border: 1px solid white;
-                opacity: 0.7;
-                a {
-                    color: rgb(0, 0, 0);
-                }
+                opacity: 0.85;
                 margin-left: 15px;
             }
         }
@@ -1516,36 +1500,82 @@ header {
             display: flex;
             flex-direction: row;
             height: 70vh;
+            a {
+                width: 100px;
+                height: 100%;
+            }
             .category {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                font-weight: bold;
-                font-family: 'Kanit', sans-serif;
-                flex: 1 1 0;
+                flex: 0.5 1 0;
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                transition: flex 0.8s ease;
+                transition: 0.8s ease;
                 a {
                     text-decoration: none;
                     color: white;
-                    transform: rotateZ(90deg)
+                    transform: rotateZ(90deg);
                 }
                 &:hover {
-                    flex: 1.8 1 0;
+                    flex: 4 1 0;
+                    opacity: 1;
                 }
             }
             .category-1 {
-                // background-image: url(../image/sacrament.jpg);
+                background-image: url(../image/elmi-kutlevi.jpg);
+                opacity: 0.85;
+                border: 1px solid white;
             }
             .category-2 {
-                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-fantastika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
             }
             .category-3 {
-                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/psixi.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-4 {
+                background-image: url(../image/detektiv.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-5 {
+                background-image: url(../image/tarix.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-6 {
+                background-image: url(../image/tarixi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                a {
+                    color: rgb(0, 0, 0);
+                }
+                margin-left: 15px;
+            }
+            .category-7 {
+                background-image: url(../image/modern-klassika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-8 {
+                background-image: url(../image/klassika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-9 {
+                background-image: url(../image/edebi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
             }
         }
     }
@@ -2268,36 +2298,82 @@ header {
             display: flex;
             flex-direction: row;
             height: 70vh;
+            a {
+                width: 100px;
+                height: 100%;
+            }
             .category {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 12px;
-                font-weight: bold;
-                font-family: 'Kanit', sans-serif;
-                flex: 1 1 0;
+                flex: 0.3 1 0;
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                transition: flex 0.8s ease;
+                transition: 0.8s ease;
                 a {
                     text-decoration: none;
                     color: white;
-                    transform: rotateZ(90deg)
+                    transform: rotateZ(90deg);
                 }
                 &:hover {
-                    flex: 1.8 1 0;
+                    flex: 4 1 0;
+                    opacity: 1;
                 }
             }
             .category-1 {
-                // background-image: url(../image/sacrament.jpg);
+                background-image: url(../image/elmi-kutlevi.jpg);
+                opacity: 0.85;
+                border: 1px solid white;
             }
             .category-2 {
-                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-fantastika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
             }
             .category-3 {
-                // background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/psixi.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-4 {
+                background-image: url(../image/detektiv.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-5 {
+                background-image: url(../image/tarix.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-6 {
+                background-image: url(../image/tarixi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                a {
+                    color: rgb(0, 0, 0);
+                }
+                margin-left: 15px;
+            }
+            .category-7 {
+                background-image: url(../image/modern-klassika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-8 {
+                background-image: url(../image/klassika.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-9 {
+                background-image: url(../image/edebi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
             }
         }
     }
@@ -3252,7 +3328,7 @@ header {
 }
 
 #ProfilePhoto {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
     .photo-options {
         width: 100%;
         border-radius: 20px;
@@ -3290,7 +3366,7 @@ header {
             opacity: 0;
             width: 100px;
             height: 100px;
-            background: transparentize($color: white, $amount: 0.4);
+            background: transparentize($color: white, $amount: 0.3);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -3320,6 +3396,8 @@ header {
                 transform: translate(-50%, 0%);
                 i {
                     cursor: pointer;
+                    font-size: 22px;
+                    color: $primary_color
                 }
             }
             .pp {
@@ -3339,6 +3417,8 @@ header {
                 cursor: pointer;
                 i {
                     cursor: pointer;
+                    font-size: 22px;
+                    color: $primary_color
                 }
             }
         }
@@ -3346,30 +3426,140 @@ header {
 }
 
 #ProfileAbout {
+    padding-bottom: 80px;
     .card-favorite {
+        cursor: pointer;
+        position: relative;
         .face {
-            .content2 {
-                .book {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 10px;
-                    .image {
-                        width: 60px;
-                        img {
-                            width: 100%;
-                        }
+            transition: 0.5s;
+        }
+        .face.face1 {
+            height: 150px;
+            position: relative;
+            background-color: #BABFD1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            text-align: center;
+            .content1 {
+                opacity: 0.3;
+                transition: 0.5s;
+                i {
+                    font-size: 25px;
+                    color: white;
+                }
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+        &:hover {
+            .face.face1 .content1 {
+                opacity: 1;
+            }
+        }
+    }
+    .content2 {
+        .sale {
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            ul {
+                list-style: none;
+                text-align: center;
+                li {
+                    padding-top: 20px;
+                    border-bottom: 1px ridge;
+                    h6 {
+                        margin: 0;
                     }
-                    .title {
-                        width: 250px;
-                        line-height: 10px;
-                        h6 {
-                            font-weight: bold;
+                }
+            }
+        }
+    }
+    .face.face2 {
+        position: relative;
+        background-color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+    .about {
+        padding: 0 30px;
+        line-height: 30px;
+        h2 {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+#ModalSales {
+    .modal-body {
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-around;
+                cursor: pointer;
+                padding-top: 20px;
+                border-bottom: 1px ridge;
+                h6 {
+                    margin: 0;
+                }
+            }
+        }
+        .books {
+            display: none;
+            .book {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                .image {
+                    width: 60px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .title {
+                    line-height: 10px;
+                    padding: 0 10px;
+                    h6 {
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                    a {
+                        text-decoration: none;
+                        position: relative;
+                        transition: 0.3s;
+                        color: $primary_color;
+                        &::before {
+                            display: block;
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            bottom: -3px;
+                            width: 100%;
+                            height: 2.5px;
+                            background-color: tomato;
+                            transform-origin: 50% 50%;
+                            transform: translateX(-50%) scaleX(0);
+                            transition: 0.3s;
                         }
-                        p {
-                            font-size: 14px;
-                        }
-                        span {
-                            font-size: 14px;
+                        &:hover {
+                            color: tomato;
+                            &::before {
+                                transform: translateX(-50%) scaleX(1);
+                            }
                         }
                     }
                 }
