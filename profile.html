@@ -24,8 +24,16 @@
                             alt=" ">
                     </div>
                     <div class="menu col">
-                        <div class="cart mr-5">
-                            <a href=""><i class="fas fa-shopping-basket"></i></a>
+                        <div class="login">
+                            <a href="">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <h6>Login</h6>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="">
+                                <i class="fas fa-shopping-basket"></i>
+                            </a>
                             <sup>0</sup>
                         </div>
                         <span>Menu</span>
@@ -41,7 +49,6 @@
                             <li><a href="newBooks.html">Yenilər</a></li>
                             <li><a href="bestSellers.html">Çox satılanlar</a></li>
                             <li><a href="categories.html">Kategoriyalar</a></li>
-                            <li><a href="publisher.html">Yayın evləri</a></li>
                         </ul>
 
                     </div>
@@ -81,9 +88,9 @@
                 <div class="mainRight col-md-12 d-flex justify-content-end ">
                     <div class="rightSide">
                         <ul class="navRightUl">
-                            <li><a href="register.html">Qeydiyyat</a></li>
-                            <li><a href="">Giriş</a></li>
-                            <li><a href="">Əlaqə</a></li>
+                            <li><a href="publisher.html">Yayın evləri</a></li>
+                            <li><a href="register.html">Qeydiyyat/Giriş</a></li>
+                            <li><a href="contact.html">Əlaqə</a></li>
                         </ul>
                     </div>
                     <div class="about">
@@ -110,7 +117,12 @@
   </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="currentPhoto">
+                            <h4>Current Photo:</h4>
+                            <img src="" alt="">
+                        </div>
+                        <h4>New Photo:</h4>
+                        <input type="file" class="form-control" accept="image/*">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -125,17 +137,83 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Settings</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <span>Ad və Soyad</span>
+                        <input type="text" class="form-control">
+                        <span>Doğum tarixi</span>
+                        <input type="date" class="form-control">
+                        <span>Mobil nömrə</span>
+                        <input type="text" class="form-control">
+                        <span>Facebook(Link)</span>
+                        <input type="   text" class="form-control">
+                        <span>Instagram(Username)</span>
+                        <input type="text" class="form-control">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Favorite -->
+        <div class="modal fade" id="ModalFavorite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Seçilmiş kitablar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="books">
+                            <div class="book">
+                                <div class="image">
+                                    <img src="image/mazerunner.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>Maze Runner Maze Runner Maze Runner</h6>
+                                    <p><a href="">Stephen King</a></p>
+                                    <span><a href="">Platanus Publishing</a></span>
+                                </div>
+                                <div class="delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image">
+                                    <img src="image/mazerunner.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>Maze Runner Maze Runner Maze Runner</h6>
+                                    <p><a href="">Stephen King</a></p>
+                                    <span><a href="">Platanus Publishing</a></span>
+                                </div>
+                                <div class="delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image">
+                                    <img src="image/mazerunner.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>Maze Runner Maze Runner Maze Runner</h6>
+                                    <p><a href="">Stephen King</a></p>
+                                    <span><a href="">Platanus Publishing</a></span>
+                                </div>
+                                <div class="delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,6 +266,7 @@
                                         <span><a href="">Platanus Publishing</a></span>
                                     </div>
                                 </div>
+                                <h6 class="total">Total: </h6>
                             </div>
                             <li>
                                 <h6>20/09/2020</h6>
@@ -224,6 +303,7 @@
                                         <span><a href="">Platanus Publishing</a></span>
                                     </div>
                                 </div>
+                                <h6 class="total">Total: </h6>
                             </div>
                             <li>
                                 <h6>20/09/2020</h6>
@@ -260,6 +340,8 @@
                                         <span><a href="">Platanus Publishing</a></span>
                                     </div>
                                 </div>
+                                <h6 class="total">Total: </h6>
+
                             </div>
                         </ul>
                     </div>
@@ -272,6 +354,12 @@
         <section id="ProfilePhoto">
             <div class="container">
                 <div class="photo-options">
+                    <div class="cloud-left">
+                        <img src="image/cloud.png" alt="">
+                    </div>
+                    <div class="cloud-right">
+                        <img src="image/cloud.png" alt="">
+                    </div>
                     <div class="photo">
                         <img src="image/pp.jpg" alt="">
                         <i class="edit fas fa-edit"></i>
@@ -289,7 +377,6 @@
                         <i class="close fas fa-times"></i>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -297,16 +384,16 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-8 col-8">
-                        <div class="card-favorite mt-5">
-                            <div class="face face1">
+                        <div class="card-sale mt-5">
+                            <div class="face saleFace1">
                                 <div class="content1">
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-archive"></i>
                                     <h3>Alışlar</h3>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="face face2">
+                        <div class="face saleFace2">
                             <div class="content2">
                                 <div class="sale">
                                     <ul>
@@ -327,6 +414,52 @@
                                         </li>
                                     </ul>
                                     <button type="button" class="mt-2 btn btn-outline-primary" data-toggle="modal" data-target="#ModalSales">Detallar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-favorite mt-5">
+                            <div class="face favoriteFace1">
+                                <div class="content1">
+                                    <i class="fas fa-star"></i>
+                                    <h3>Seçilmiş kitablar</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face favoriteFace2">
+                            <div class="content2">
+                                <div class="books">
+                                    <div class="book">
+                                        <div class="image">
+                                            <img src="image/mazerunner.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h6>Maze Runner Maze Runner </h6>
+                                            <p><a href="">Stephen King</a></p>
+                                            <span><a href="">Platanus Publishing</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="book">
+                                        <div class="image">
+                                            <img src="image/mazerunner.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h6>Maze Runner Maze Runner Maze Runner</h6>
+                                            <p><a href="">Stephen King</a></p>
+                                            <span><a href="">Platanus Publishing</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="book">
+                                        <div class="image">
+                                            <img src="image/mazerunner.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h6>Maze Runner Maze Runner Maze Runner</h6>
+                                            <p><a href="">Stephen King</a></p>
+                                            <span><a href="">Platanus Publishing</a></span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="mt-2 btn btn-outline-primary" data-toggle="modal" data-target="#ModalFavorite">Detallar</button>
                                 </div>
                             </div>
                         </div>

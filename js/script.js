@@ -16,6 +16,7 @@ $(document).ready(function() {
         }, 200)
         setTimeout(function leftSide() {
             $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
+            $("body").css("overflow", "hidden")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -39,6 +40,7 @@ $(document).ready(function() {
         }, 200)
         setTimeout(function leftSide() {
             $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
+            $("body").css("overflow", "hidden")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -47,6 +49,7 @@ $(document).ready(function() {
 
 
     $("#close").click(function() {
+        $("body").css("overflow", "scroll")
         setTimeout(function leftSide() {
             $(".activeMenu .about").css("display", "none")
         }, 300)
@@ -252,9 +255,14 @@ $(document).ready(function() {
         }, 400);
     })
 
+    $("#ProfileAbout .card-sale").click(function() {
+        $("#ProfileAbout .saleFace2").slideToggle()
+        $("#ProfileAbout .saleFace2").css("display", "flex")
+    })
+
     $("#ProfileAbout .card-favorite").click(function() {
-        $("#ProfileAbout .face2").slideToggle()
-        $("#ProfileAbout .face2").css("display", "flex")
+        $("#ProfileAbout .favoriteFace2").slideToggle()
+        $("#ProfileAbout .favoriteFace2").css("display", "flex")
     })
 
     $("#ModalSales .modal-body li").click(function() {

@@ -121,6 +121,7 @@ header {
   width: 100vw;
   left: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 header .menu {
@@ -133,6 +134,77 @@ header .menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+header .menu .login {
+  margin-right: 40px;
+}
+
+header .menu .login a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu .login a i {
+  margin-right: 5px;
+  color: #236bdf;
+}
+
+header .menu .login a h6 {
+  margin: 0;
+}
+
+header .menu .login a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 100%;
+  height: 2.5px;
+  background-color: #236bdf;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu .login a:hover {
+  color: #1abc9c;
+}
+
+header .menu .login a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+header .menu .login a:hover i {
+  color: #1abc9c;
+}
+
+header .menu .cart {
+  margin-right: 40px;
+}
+
+header .menu .cart a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+header .menu .cart a:hover {
+  color: #1abc9c;
 }
 
 header .menu .cart i {
@@ -1107,7 +1179,6 @@ header .menu #sandwich {
     display: flex;
   }
   #Category .title a {
-    margin-left: 50px;
     text-decoration: none;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1167,22 +1238,22 @@ header .menu #sandwich {
             flex: 3 1 0;
   }
   #Category .categories .category-1 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/klassika.jpg);
   }
   #Category .categories .category-2 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/detektiv.jpg);
   }
   #Category .categories .category-3 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/psixi.jpg);
   }
   #Category .categories .category-4 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-kutlevi.jpg);
   }
   #Category .categories .category-5 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-fantastika.jpg);
   }
   #Category .categories .category-6 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/tarix.jpg);
   }
   #Footer {
     padding: 30px 0;
@@ -1984,7 +2055,6 @@ header .menu #sandwich {
     display: flex;
   }
   #Category .title a {
-    margin-left: 50px;
     text-decoration: none;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2019,9 +2089,9 @@ header .menu #sandwich {
             align-items: center;
     font-size: 16px;
     font-weight: bold;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    -webkit-box-flex: 0.7;
+        -ms-flex: 0.7 1 0px;
+            flex: 0.7 1 0;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -2038,27 +2108,27 @@ header .menu #sandwich {
             transform: rotateZ(90deg);
   }
   #Category .categories .category:hover {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 0px;
-            flex: 3 1 0;
+    -webkit-box-flex: 3.5;
+        -ms-flex: 3.5 1 0px;
+            flex: 3.5 1 0;
   }
   #Category .categories .category-1 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/klassika.jpg);
   }
   #Category .categories .category-2 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/detektiv.jpg);
   }
   #Category .categories .category-3 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/psixi.jpg);
   }
   #Category .categories .category-4 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-kutlevi.jpg);
   }
   #Category .categories .category-5 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-fantastika.jpg);
   }
   #Category .categories .category-6 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/tarix.jpg);
   }
   #newBooks .book-section .book {
     -webkit-box-pack: center;
@@ -2659,6 +2729,9 @@ header .menu #sandwich {
     display: block;
     font-size: 25px;
   }
+  header .menu .login {
+    display: none;
+  }
   .activeMenu {
     height: 100vh;
     -webkit-transform: translate(70%, -400px);
@@ -2973,7 +3046,6 @@ header .menu #sandwich {
     display: flex;
   }
   #Category .title a {
-    margin-left: 50px;
     text-decoration: none;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3007,9 +3079,9 @@ header .menu #sandwich {
         -ms-flex-align: center;
             align-items: center;
     font-size: 10px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6 1 0px;
+            flex: 0.6 1 0;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -3026,27 +3098,27 @@ header .menu #sandwich {
             transform: rotateZ(90deg);
   }
   #Category .categories .category:hover {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 0px;
-            flex: 3 1 0;
+    -webkit-box-flex: 3.5;
+        -ms-flex: 3.5 1 0px;
+            flex: 3.5 1 0;
   }
   #Category .categories .category-1 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/klassika.jpg);
   }
   #Category .categories .category-2 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/detektiv.jpg);
   }
   #Category .categories .category-3 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/psixi.jpg);
   }
   #Category .categories .category-4 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-kutlevi.jpg);
   }
   #Category .categories .category-5 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/elmi-fantastika.jpg);
   }
   #Category .categories .category-6 {
-    background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+    background-image: url(../image/tarix.jpg);
   }
 }
 
@@ -3290,7 +3362,6 @@ header .menu #sandwich {
 }
 
 #BookOfMonth .title a {
-  margin-left: 50px;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -4219,7 +4290,9 @@ header .menu #sandwich {
 #ProfilePhoto .photo-options {
   width: 100%;
   border-radius: 20px;
-  background-color: #4481eb;
+  background-color: #87CEEB;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 25%, 100% 100%, 20% 100%, 0 75%);
+          clip-path: polygon(0 0, 80% 0, 100% 25%, 100% 100%, 20% 100%, 0 75%);
   position: relative;
   min-height: 300px;
 }
@@ -4343,21 +4416,42 @@ header .menu #sandwich {
   color: #236bdf;
 }
 
+#ProfilePhoto .photo-options .cloud-left {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 200px;
+}
+
+#ProfilePhoto .photo-options .cloud-left img {
+  width: 100%;
+}
+
+#ProfilePhoto .photo-options .cloud-right {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 200px;
+}
+
+#ProfilePhoto .photo-options .cloud-right img {
+  width: 100%;
+}
+
 #ProfileAbout {
   padding-bottom: 80px;
 }
 
+#ProfileAbout .card-sale,
 #ProfileAbout .card-favorite {
   cursor: pointer;
   position: relative;
 }
 
-#ProfileAbout .card-favorite .face {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#ProfileAbout .card-favorite .face.face1 {
+#ProfileAbout .card-sale .face.saleFace1,
+#ProfileAbout .card-sale .face.favoriteFace1,
+#ProfileAbout .card-favorite .face.saleFace1,
+#ProfileAbout .card-favorite .face.favoriteFace1 {
   height: 150px;
   position: relative;
   background-color: #BABFD1;
@@ -4374,23 +4468,109 @@ header .menu #sandwich {
   text-align: center;
 }
 
-#ProfileAbout .card-favorite .face.face1 .content1 {
+#ProfileAbout .card-sale .face.saleFace1 .content1,
+#ProfileAbout .card-sale .face.favoriteFace1 .content1,
+#ProfileAbout .card-favorite .face.saleFace1 .content1,
+#ProfileAbout .card-favorite .face.favoriteFace1 .content1 {
   opacity: 0.3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#ProfileAbout .card-favorite .face.face1 .content1 i {
+#ProfileAbout .card-sale .face.saleFace1 .content1 i,
+#ProfileAbout .card-sale .face.favoriteFace1 .content1 i,
+#ProfileAbout .card-favorite .face.saleFace1 .content1 i,
+#ProfileAbout .card-favorite .face.favoriteFace1 .content1 i {
   font-size: 25px;
   color: white;
 }
 
-#ProfileAbout .card-favorite .face.face1 .content1 h3 {
+#ProfileAbout .card-sale .face.saleFace1 .content1 h3,
+#ProfileAbout .card-sale .face.favoriteFace1 .content1 h3,
+#ProfileAbout .card-favorite .face.saleFace1 .content1 h3,
+#ProfileAbout .card-favorite .face.favoriteFace1 .content1 h3 {
   font-weight: bold;
 }
 
-#ProfileAbout .card-favorite:hover .face.face1 .content1 {
+#ProfileAbout .card-sale:hover .face.saleFace1 .content1,
+#ProfileAbout .card-sale:hover .face.favoriteFace1 .content1,
+#ProfileAbout .card-favorite:hover .face.saleFace1 .content1,
+#ProfileAbout .card-favorite:hover .face.favoriteFace1 .content1 {
   opacity: 1;
+}
+
+#ProfileAbout .content2 .books .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 10px;
+}
+
+#ProfileAbout .content2 .books .book .image {
+  width: 20%;
+}
+
+#ProfileAbout .content2 .books .book .image img {
+  width: 100%;
+}
+
+#ProfileAbout .content2 .books .book .title {
+  width: 80%;
+  line-height: 10px;
+  padding: 0 10px;
+}
+
+#ProfileAbout .content2 .books .book .title h6 {
+  font-weight: bold;
+}
+
+#ProfileAbout .content2 .books .book .title p {
+  font-size: 14px;
+}
+
+#ProfileAbout .content2 .books .book .title span {
+  font-size: 14px;
+}
+
+#ProfileAbout .content2 .books .book .title a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #236bdf;
+}
+
+#ProfileAbout .content2 .books .book .title a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#ProfileAbout .content2 .books .book .title a:hover {
+  color: tomato;
+}
+
+#ProfileAbout .content2 .books .book .title a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+#ProfileAbout .content2 .books .btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 #ProfileAbout .content2 .sale {
@@ -4413,7 +4593,8 @@ header .menu #sandwich {
   margin: 0;
 }
 
-#ProfileAbout .face.face2 {
+#ProfileAbout .face.saleFace2,
+#ProfileAbout .face.favoriteFace2 {
   position: relative;
   background-color: white;
   display: none;
@@ -4438,6 +4619,100 @@ header .menu #sandwich {
 #ProfileAbout .about h2 {
   font-weight: bold;
   text-align: center;
+}
+
+#ModalPhoto .currentPhoto h4 {
+  margin: 0;
+}
+
+#ModalFavorite .books .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 10px;
+}
+
+#ModalFavorite .books .book .image {
+  width: 20%;
+}
+
+#ModalFavorite .books .book .image img {
+  width: 100%;
+}
+
+#ModalFavorite .books .book .title {
+  width: 80%;
+  line-height: 10px;
+  padding: 0 10px;
+}
+
+#ModalFavorite .books .book .title h6 {
+  font-weight: bold;
+}
+
+#ModalFavorite .books .book .title p {
+  font-size: 14px;
+}
+
+#ModalFavorite .books .book .title span {
+  font-size: 14px;
+}
+
+#ModalFavorite .books .book .title a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #236bdf;
+}
+
+#ModalFavorite .books .book .title a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#ModalFavorite .books .book .title a:hover {
+  color: tomato;
+}
+
+#ModalFavorite .books .book .title a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+#ModalFavorite .books .book .delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ModalFavorite .books .book .delete i {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+#ModalFavorite .books .total {
+  font-weight: bold;
+  text-align: end;
 }
 
 #ModalSales .modal-body ul {
@@ -4467,13 +4742,11 @@ header .menu #sandwich {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 #ModalSales .modal-body .books .book .image {
-  width: 60px;
+  width: 20%;
 }
 
 #ModalSales .modal-body .books .book .image img {
@@ -4481,6 +4754,7 @@ header .menu #sandwich {
 }
 
 #ModalSales .modal-body .books .book .title {
+  width: 80%;
   line-height: 10px;
   padding: 0 10px;
 }
@@ -4529,5 +4803,10 @@ header .menu #sandwich {
 #ModalSales .modal-body .books .book .title a:hover::before {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
+}
+
+#ModalSales .modal-body .books .total {
+  font-weight: bold;
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */

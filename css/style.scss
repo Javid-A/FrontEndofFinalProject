@@ -28,7 +28,6 @@ body {
             min-height: 50px;
             padding: 0 10px;
             width: 50px;
-            // border-radius: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -98,11 +97,62 @@ header {
     width: 100vw;
     left: 0;
     z-index: 100;
+    background: transparentize($color: white, $amount: 0.3);
     .menu {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        .login {
+            margin-right: 40px;
+            a {
+                display: flex;
+                text-decoration: none;
+                color: black;
+                i {
+                    margin-right: 5px;
+                    color: $primary_color;
+                }
+                h6 {
+                    margin: 0;
+                }
+                position: relative;
+                cursor: pointer;
+                font-size: 17px;
+                font-weight: bold;
+                transition: 0.3s;
+                &::before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: -4px;
+                    width: 100%;
+                    height: 2.5px;
+                    background-color: $primary_color;
+                    transform-origin: 50% 50%;
+                    transform: translateX(-50%) scaleX(0);
+                    transition: 0.3s;
+                }
+                &:hover {
+                    color: #1abc9c;
+                    &::before {
+                        transform: translateX(-50%) scaleX(1);
+                    }
+                    i {
+                        color: #1abc9c;
+                    }
+                }
+            }
+        }
         .cart {
+            margin-right: 40px;
+            a {
+                transition: 0.3s;
+                text-decoration: none;
+                &:hover {
+                    color: #1abc9c;
+                }
+            }
             i {
                 font-size: 22px;
                 cursor: pointer;
@@ -963,7 +1013,6 @@ header {
                 h3 {
                     font-weight: bold;
                 }
-                margin-left: 50px;
                 text-decoration: none;
                 transition: 0.3s;
                 color: $primary_color;
@@ -1000,22 +1049,22 @@ header {
                 }
             }
             .category-1 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/klassika.jpg);
             }
             .category-2 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/detektiv.jpg);
             }
             .category-3 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/psixi.jpg);
             }
             .category-4 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-kutlevi.jpg);
             }
             .category-5 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-fantastika.jpg);
             }
             .category-6 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/tarix.jpg);
             }
         }
     }
@@ -1588,7 +1637,6 @@ header {
                 h3 {
                     font-weight: bold;
                 }
-                margin-left: 50px;
                 text-decoration: none;
                 transition: 0.3s;
                 color: $primary_color;
@@ -1608,7 +1656,7 @@ header {
                 align-items: center;
                 font-size: 16px;
                 font-weight: bold;
-                flex: 1 1 0;
+                flex: 0.7 1 0;
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -1620,26 +1668,26 @@ header {
                     transform: rotateZ(90deg)
                 }
                 &:hover {
-                    flex: 3 1 0;
+                    flex: 3.5 1 0;
                 }
             }
             .category-1 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/klassika.jpg);
             }
             .category-2 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/detektiv.jpg);
             }
             .category-3 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/psixi.jpg);
             }
             .category-4 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-kutlevi.jpg);
             }
             .category-5 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-fantastika.jpg);
             }
             .category-6 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/tarix.jpg);
             }
         }
     }
@@ -2113,6 +2161,9 @@ header {
                 display: block;
                 font-size: 25px;
             }
+            .login {
+                display: none;
+            }
         }
     }
     .activeMenu {
@@ -2386,7 +2437,6 @@ header {
                 h3 {
                     font-weight: bold;
                 }
-                margin-left: 50px;
                 text-decoration: none;
                 transition: 0.3s;
                 color: $primary_color;
@@ -2405,7 +2455,7 @@ header {
                 justify-content: center;
                 align-items: center;
                 font-size: 10px;
-                flex: 1 1 0;
+                flex: 0.6 1 0;
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -2417,26 +2467,26 @@ header {
                     transform: rotateZ(90deg)
                 }
                 &:hover {
-                    flex: 3 1 0;
+                    flex: 3.5 1 0;
                 }
             }
             .category-1 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/klassika.jpg);
             }
             .category-2 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/detektiv.jpg);
             }
             .category-3 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/psixi.jpg);
             }
             .category-4 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-kutlevi.jpg);
             }
             .category-5 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/elmi-fantastika.jpg);
             }
             .category-6 {
-                background-image: url(../image/photo-1531804055935-76f44d7c3621.jpg);
+                background-image: url(../image/tarix.jpg);
             }
         }
     }
@@ -2612,7 +2662,6 @@ header {
             h3 {
                 font-weight: bold;
             }
-            margin-left: 50px;
             text-decoration: none;
             transition: 0.3s;
             color: $primary_color;
@@ -3332,7 +3381,8 @@ header {
     .photo-options {
         width: 100%;
         border-radius: 20px;
-        background-color: #4481eb;
+        background-color: #87CEEB;
+        clip-path: polygon(0 0, 80% 0, 100% 25%, 100% 100%, 20% 100%, 0 75%);
         position: relative;
         min-height: 300px;
         .photo {
@@ -3422,18 +3472,35 @@ header {
                 }
             }
         }
+        .cloud-left {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 200px;
+            img {
+                width: 100%;
+            }
+        }
+        .cloud-right {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            width: 200px;
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
 #ProfileAbout {
     padding-bottom: 80px;
+    .card-sale,
     .card-favorite {
         cursor: pointer;
         position: relative;
-        .face {
-            transition: 0.5s;
-        }
-        .face.face1 {
+        .face.saleFace1,
+        .face.favoriteFace1 {
             height: 150px;
             position: relative;
             background-color: #BABFD1;
@@ -3455,77 +3522,25 @@ header {
             }
         }
         &:hover {
-            .face.face1 .content1 {
+            .face.saleFace1 .content1,
+            .face.favoriteFace1 .content1 {
                 opacity: 1;
             }
         }
     }
     .content2 {
-        .sale {
-            margin: 10px;
-            width: 200px;
-            text-align: center;
-            ul {
-                list-style: none;
-                text-align: center;
-                li {
-                    padding-top: 20px;
-                    border-bottom: 1px ridge;
-                    h6 {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-    .face.face2 {
-        position: relative;
-        background-color: white;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    }
-    .about {
-        padding: 0 30px;
-        line-height: 30px;
-        h2 {
-            font-weight: bold;
-            text-align: center;
-        }
-    }
-}
-
-#ModalSales {
-    .modal-body {
-        ul {
-            list-style: none;
-            li {
-                display: flex;
-                justify-content: space-around;
-                cursor: pointer;
-                padding-top: 20px;
-                border-bottom: 1px ridge;
-                h6 {
-                    margin: 0;
-                }
-            }
-        }
         .books {
-            display: none;
             .book {
                 display: flex;
-                flex-wrap: wrap;
-                padding: 10px;
+                padding: 15px 10px;
                 .image {
-                    width: 60px;
+                    width: 20%;
                     img {
                         width: 100%;
                     }
                 }
                 .title {
+                    width: 80%;
                     line-height: 10px;
                     padding: 0 10px;
                     h6 {
@@ -3563,6 +3578,196 @@ header {
                         }
                     }
                 }
+            }
+            .btn {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .sale {
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            ul {
+                list-style: none;
+                text-align: center;
+                li {
+                    padding-top: 20px;
+                    border-bottom: 1px ridge;
+                    h6 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .face.saleFace2,
+    .face.favoriteFace2 {
+        position: relative;
+        background-color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+    .about {
+        padding: 0 30px;
+        line-height: 30px;
+        h2 {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+#ModalPhoto {
+    .currentPhoto {
+        h4 {
+            margin: 0;
+        }
+    }
+}
+
+#ModalFavorite {
+    .books {
+        .book {
+            display: flex;
+            padding: 15px 10px;
+            .image {
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+            .title {
+                width: 80%;
+                line-height: 10px;
+                padding: 0 10px;
+                h6 {
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 14px;
+                }
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    transition: 0.3s;
+                    color: $primary_color;
+                    &::before {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        bottom: -3px;
+                        width: 100%;
+                        height: 2.5px;
+                        background-color: tomato;
+                        transform-origin: 50% 50%;
+                        transform: translateX(-50%) scaleX(0);
+                        transition: 0.3s;
+                    }
+                    &:hover {
+                        color: tomato;
+                        &::before {
+                            transform: translateX(-50%) scaleX(1);
+                        }
+                    }
+                }
+            }
+            .delete {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
+        .total {
+            font-weight: bold;
+            text-align: end;
+        }
+    }
+}
+
+#ModalSales {
+    .modal-body {
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-around;
+                cursor: pointer;
+                padding-top: 20px;
+                border-bottom: 1px ridge;
+                h6 {
+                    margin: 0;
+                }
+            }
+        }
+        .books {
+            display: none;
+            .book {
+                display: flex;
+                padding: 15px 10px;
+                .image {
+                    width: 20%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .title {
+                    width: 80%;
+                    line-height: 10px;
+                    padding: 0 10px;
+                    h6 {
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                    a {
+                        text-decoration: none;
+                        position: relative;
+                        transition: 0.3s;
+                        color: $primary_color;
+                        &::before {
+                            display: block;
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            bottom: -3px;
+                            width: 100%;
+                            height: 2.5px;
+                            background-color: tomato;
+                            transform-origin: 50% 50%;
+                            transform: translateX(-50%) scaleX(0);
+                            transition: 0.3s;
+                        }
+                        &:hover {
+                            color: tomato;
+                            &::before {
+                                transform: translateX(-50%) scaleX(1);
+                            }
+                        }
+                    }
+                }
+            }
+            .total {
+                font-weight: bold;
+                text-align: end;
             }
         }
     }
