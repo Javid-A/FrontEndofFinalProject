@@ -292,6 +292,14 @@ header .menu #sandwich {
   #newBooks .filter-section .filter-wrapper {
     display: none;
   }
+  #bookDetail .book .content {
+    padding: 0 30px !important;
+    text-align: center !important;
+    margin-top: 15px;
+  }
+  #bookDetail .book .content .price {
+    display: block !important;
+  }
   #Contact .contactInfo {
     display: none !important;
   }
@@ -3120,6 +3128,12 @@ header .menu #sandwich {
   #Category .categories .category-6 {
     background-image: url(../image/tarix.jpg);
   }
+  #bookDetail .book .content {
+    padding: 0;
+  }
+  #bookDetail .book .content .book-buttons a {
+    display: block;
+  }
 }
 
 #Slider {
@@ -4290,11 +4304,14 @@ header .menu #sandwich {
 #ProfilePhoto .photo-options {
   width: 100%;
   border-radius: 20px;
-  background-color: #87CEEB;
-  -webkit-clip-path: polygon(0 0, 80% 0, 100% 25%, 100% 100%, 20% 100%, 0 75%);
-          clip-path: polygon(0 0, 80% 0, 100% 25%, 100% 100%, 20% 100%, 0 75%);
   position: relative;
-  min-height: 300px;
+  height: 300px;
+}
+
+#ProfilePhoto .photo-options .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
 }
 
 #ProfilePhoto .photo-options .photo {
@@ -4418,8 +4435,8 @@ header .menu #sandwich {
 
 #ProfilePhoto .photo-options .cloud-left {
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: 155px;
+  left: -80px;
   width: 200px;
 }
 
@@ -4429,13 +4446,40 @@ header .menu #sandwich {
 
 #ProfilePhoto .photo-options .cloud-right {
   position: absolute;
-  top: 50px;
-  right: 0px;
+  top: -50px;
+  right: -50px;
   width: 200px;
 }
 
 #ProfilePhoto .photo-options .cloud-right img {
   width: 100%;
+}
+
+#ProfilePhoto .photo-options .name {
+  position: absolute;
+  width: 280px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  overflow: hidden;
+}
+
+#ProfilePhoto .photo-options .name h5 {
+  font-weight: bold;
+  margin: 0;
+  color: white;
 }
 
 #ProfileAbout {
@@ -4454,7 +4498,7 @@ header .menu #sandwich {
 #ProfileAbout .card-favorite .face.favoriteFace1 {
   height: 150px;
   position: relative;
-  background-color: #BABFD1;
+  background-color: #083086;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4490,6 +4534,7 @@ header .menu #sandwich {
 #ProfileAbout .card-favorite .face.saleFace1 .content1 h3,
 #ProfileAbout .card-favorite .face.favoriteFace1 .content1 h3 {
   font-weight: bold;
+  color: white;
 }
 
 #ProfileAbout .card-sale:hover .face.saleFace1 .content1,
@@ -4808,5 +4853,197 @@ header .menu #sandwich {
 #ModalSales .modal-body .books .total {
   font-weight: bold;
   text-align: end;
+}
+
+#bookDetail {
+  padding: 100px 0;
+}
+
+#bookDetail .book .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-shadow: 6px 10px 14px gray;
+          box-shadow: 6px 10px 14px gray;
+  padding: 0;
+}
+
+#bookDetail .book .image a {
+  width: 100%;
+}
+
+#bookDetail .book .image img {
+  width: 100%;
+}
+
+#bookDetail .book .content {
+  padding-left: 50px;
+}
+
+#bookDetail .book .content h3 {
+  font-weight: bold;
+}
+
+#bookDetail .book .content h3 a {
+  color: #0093b0;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#bookDetail .book .content h3 a:hover {
+  color: #007b94;
+}
+
+#bookDetail .book .content .author-publisher {
+  line-height: 45px;
+}
+
+#bookDetail .book .content .author-publisher a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+
+#bookDetail .book .content .author-publisher a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#bookDetail .book .content .author-publisher a:hover {
+  color: tomato;
+}
+
+#bookDetail .book .content .author-publisher a:hover::before {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
+
+#bookDetail .book .content .author-publisher p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#bookDetail .book .content .author-publisher span {
+  font-size: 18px;
+}
+
+#bookDetail .book .content .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bookDetail .book .content .price .stock {
+  color: #569a4d;
+}
+
+#bookDetail .book .content .book-buttons .shopBtn i {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+#bookDetail .book .content .book-buttons .shopBtn:hover i {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+  color: tomato;
+}
+
+#bookDetail .book .content .book-buttons .fBtn i {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+#bookDetail .book .content .book-buttons .fBtn:hover i {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+  color: tomato;
+}
+
+#bookDetail .book .book-details {
+  padding-top: 20px;
+}
+
+#bookDetail .book .book-details .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#bookDetail .book .book-details .menu div {
+  width: 125px;
+  padding: 15px 0px;
+  cursor: pointer;
+  font-weight: bold;
+  border-right: 1px solid #f1f1f1;
+  width: 50%;
+  text-align: center;
+}
+
+#bookDetail .book .book-details .menu div.selected {
+  color: #f34f3f;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#bookDetail .book .book-details .details {
+  padding-top: 10px;
+  text-align: justify;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+#bookDetail .book .book-details .details div.opened {
+  display: block;
+}
+
+#bookDetail .book .book-details .details .option {
+  display: none;
+}
+
+#bookDetail .book .book-details .details .option .row ul li {
+  list-style: none;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+#bookDetail .book .book-details .details .option .row h6 {
+  font-weight: bold;
+}
+
+#bookDetail .book .book-details .details .option .row div {
+  font-size: 14px;
+}
+
+#bookDetail .book .book-details .details .option .row .support p {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */

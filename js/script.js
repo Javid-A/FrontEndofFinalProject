@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 
     $("#close").click(function() {
-        $("body").css("overflow", "scroll")
+        $("body").css("overflow-y", "scroll")
         setTimeout(function leftSide() {
             $(".activeMenu .about").css("display", "none")
         }, 300)
@@ -220,6 +220,7 @@ $(document).ready(function() {
 
     $("#ProfilePhoto .photo-options .edit").click(function() {
         $("#ProfilePhoto .photo-options .photo").css("width", "60px")
+        $("#ProfilePhoto .photo-options .name").css("display", "none")
         $("#ProfilePhoto .photo-options .photo").css("height", "60px")
         $("#ProfilePhoto .photo-options .photo i").css("opacity", "0")
         $("#ProfilePhoto .photo-options .options").css("display", "block")
@@ -240,6 +241,7 @@ $(document).ready(function() {
 
     $("#ProfilePhoto .photo-options .close").click(function() {
         $("#ProfilePhoto .photo-options .options").css("width", "100px")
+        $("#ProfilePhoto .photo-options .name").css("display", "flex")
         $("#ProfilePhoto .photo-options .options").css("height", "100px")
         $("#ProfilePhoto .photo-options .options").css("opacity", "0")
         $("#ProfilePhoto .photo-options .photo img").css("display", "block")
@@ -281,6 +283,25 @@ $(document).ready(function() {
     })
 
     // Profile End
+
+    //Book Details Start
+    $("#bookDetail .book .book-details .menu div").click(function() {
+            $("#bookDetail .book .book-details .menu div").not(this).removeClass("selected")
+            if ($(this).hasClass("selected") == false) {
+                $(this).addClass("selected")
+            }
+            let contents = document.querySelectorAll("#bookDetail .book .book-details .details div")
+            for (let content of contents) {
+                if ($(this).attr("data-id") === content.getAttribute("data-id")) {
+                    content.classList.add("opened")
+                } else {
+                    content.classList.remove("opened")
+                }
+            }
+
+        })
+        //Book Details End
+
 
 
 });
