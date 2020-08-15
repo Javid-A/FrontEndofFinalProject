@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Click Menu
     $(".menu span").click(function() {
+        $("body").css("overflow", "hidden")
         $(".activeMenu").show()
         $(".activeMenu").css("animation-name", "MenuEffect")
         $(".activeMenu").css("animation-fill-mode", "forwards")
@@ -16,7 +17,6 @@ $(document).ready(function() {
         }, 200)
         setTimeout(function leftSide() {
             $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
-            $("body").css("overflow", "hidden")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -25,6 +25,7 @@ $(document).ready(function() {
 
     // Click Sandwich
     $("#sandwich").click(function() {
+        $("body").css("overflow", "hidden")
         $(".activeMenu").show()
         $(".activeMenu").css("animation-name", "MenuEffect")
         $(".activeMenu").css("animation-fill-mode", "forwards")
@@ -40,7 +41,6 @@ $(document).ready(function() {
         }, 200)
         setTimeout(function leftSide() {
             $(".activeMenu .rightSide").css("display", "block").addClass("animate__animated animate__fadeInRightBig")
-            $("body").css("overflow", "hidden")
         }, 300)
         setTimeout(function leftSide() {
             $(".activeMenu .socialUl").css("display", "flex").addClass("animate__animated animate__fadeInUpBig")
@@ -304,30 +304,51 @@ $(document).ready(function() {
 
     // Owl Carousel Start
 
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 2,
-                nav: true,
-                loop: false
-            },
-            600: {
-                items: 3,
-                nav: false,
-                loop: false
-            },
-            1000: {
-                items: 5,
-                nav: true,
-                loop: false
+    let owl = document.querySelector(".owl-carousel")
+    if (owl != null) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true,
+                    loop: false
+                },
+                600: {
+                    items: 3,
+                    nav: false,
+                    loop: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
             }
+        })
+    }
+
+    // Owl Carousel End
+
+    // Cart Start
+
+    $("#Cart .table .minus").click(function() {
+        let count = $(this).next().val()
+        if (count > 1) {
+            count--
+            $(this).next().val(count)
         }
     })
 
-    // Owl Carousel End
+    $("#Cart .table .plus").click(function() {
+        let count = $(this).prev().val()
+        count++
+        $(this).prev().val(count)
+    })
+
+    // Cart End
 
 
 

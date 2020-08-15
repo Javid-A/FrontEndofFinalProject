@@ -2729,6 +2729,13 @@ header .menu #sandwich {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Cart .table .bookImg,
+  #Cart .table .author {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 540px) {
   header .menu span {
     display: none;
@@ -3254,7 +3261,7 @@ header .menu #sandwich {
 
 .Books .cardSection .bookCard {
   position: relative;
-  width: 210px;
+  width: 200px;
   height: 280px;
   margin: 30px;
   -webkit-transform-style: preserve-3d;
@@ -3294,15 +3301,13 @@ header .menu #sandwich {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .Books .cardSection .bookCard .box .contentBox {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 210px;
   height: 100%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -4298,7 +4303,7 @@ header .menu #sandwich {
 }
 
 #ProfilePhoto {
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0px 0;
 }
 
 #ProfilePhoto .photo-options {
@@ -4373,6 +4378,8 @@ header .menu #sandwich {
   top: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: white !important;
+  opacity: 1 !important;
   cursor: pointer;
 }
 
@@ -5075,5 +5082,74 @@ header .menu #sandwich {
   padding-top: 3px;
   overflow: hidden;
   text-align: center;
+}
+
+#EmptyCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 200px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EmptyCart h1 {
+  font-weight: bold;
+  color: #236bdf;
+}
+
+#Cart {
+  padding: 100px 0 50px 0;
+}
+
+#Cart form .table .image {
+  width: 80px;
+}
+
+#Cart form .table .image img {
+  width: 100%;
+}
+
+#Cart form .table .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Cart form .table .count input {
+  width: 50px !important;
+}
+
+#Cart form .table .count i {
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #236bdf;
+}
+
+#Cart form .table .delete i {
+  font-size: 20px;
+  color: red;
+}
+
+#Cart form .table tr td,
+#Cart form .table tr th {
+  vertical-align: baseline;
+}
+
+#Cart form .bTn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
