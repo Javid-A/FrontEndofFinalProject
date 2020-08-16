@@ -98,6 +98,8 @@ header {
     left: 0;
     z-index: 100;
     background: transparentize($color: white, $amount: 0.3);
+    // background-color: white;
+    // box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
     .menu {
         display: flex;
         align-items: center;
@@ -929,7 +931,7 @@ header {
         }
     }
     .CategoriesPage {
-        margin-top: 100px;
+        margin-top: 0px;
         padding: 30px 0;
         width: 100%;
         .categories {
@@ -1010,6 +1012,24 @@ header {
             }
             .category-9 {
                 background-image: url(../image/edebi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-10 {
+                background-image: url(../image/kids.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-11 {
+                background-image: url(../image/romantic.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-12 {
+                background-image: url(../image/journal-c.jpg);
                 border: 1px solid white;
                 opacity: 0.85;
                 margin-left: 15px;
@@ -1638,6 +1658,24 @@ header {
                 opacity: 0.85;
                 margin-left: 15px;
             }
+            .category-10 {
+                background-image: url(../image/kids.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-11 {
+                background-image: url(../image/romantic.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-12 {
+                background-image: url(../image/journal-c.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
         }
     }
     #Category {
@@ -1718,6 +1756,14 @@ header {
                 .content {
                     text-align: center;
                 }
+            }
+        }
+    }
+    #Cart {
+        .table {
+            .bookImg,
+            .author {
+                display: none;
             }
         }
     }
@@ -2163,17 +2209,6 @@ header {
     }
 }
 
-@media screen and(max-width:600px) {
-    #Cart {
-        .table {
-            .bookImg,
-            .author {
-                display: none;
-            }
-        }
-    }
-}
-
 @media screen and(max-width:540px) {
     header {
         .menu {
@@ -2348,14 +2383,14 @@ header {
         .leftSide {
             position: relative;
             top: 43%;
-            left: 4%;
+            left: 0%;
             height: 80%;
             display: none;
         }
         .rightSide {
             position: relative;
             top: 43%;
-            right: 15%;
+            right: 5%;
             height: 80%;
             display: none;
         }
@@ -2389,7 +2424,7 @@ header {
                     transform: rotateZ(90deg);
                 }
                 &:hover {
-                    flex: 4 1 0;
+                    flex: 5 1 0;
                     opacity: 1;
                 }
             }
@@ -2445,6 +2480,24 @@ header {
             }
             .category-9 {
                 background-image: url(../image/edebi-roman.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-10 {
+                background-image: url(../image/kids.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-11 {
+                background-image: url(../image/romantic.jpg);
+                border: 1px solid white;
+                opacity: 0.85;
+                margin-left: 15px;
+            }
+            .category-12 {
+                background-image: url(../image/journal-c.jpg);
                 border: 1px solid white;
                 opacity: 0.85;
                 margin-left: 15px;
@@ -2601,7 +2654,7 @@ header {
             position: relative;
             width: 200px;
             height: 280px;
-            margin: 30px;
+            margin: 15px 30px;
             transform-style: preserve-3d;
             perspective: 1000px;
             &:hover {
@@ -3340,6 +3393,7 @@ header {
 }
 
 #Publisher {
+    margin-top: 100px;
     .cover-photo {
         display: flex;
         justify-content: center;
@@ -4057,6 +4111,7 @@ header {
                 i {
                     font-size: 20px;
                     color: red;
+                    cursor: pointer;
                 }
             }
             tr {
