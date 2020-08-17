@@ -201,7 +201,29 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="bTn">
+                    <span class="dtype mt-3"><strong>Çatdırılma növü:</strong></span>
+                    <select name="" id="delivery" class="form-control">
+                        <option value="Metro">Metro</option>
+                        <option value="Şəhər daxili">Şəhər daxili</option>
+                        <option value="Rayon">Rayon</option>
+                    </select>
+                    <div class="metros mt-3">
+                        <span><strong>Metrolar:</strong></span>
+                        <select name="" id="metro" class="form-control ">
+                        <option value="">20 Yanvar</option>
+                        <option value="">28 May</option>
+                        <option value="">Xətai</option>
+                    </select>
+                    </div>
+                    <div class="city mt-3 d-none">
+                        <span><Strong>Şəhər daxili adres:</Strong></span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="region mt-3 d-none">
+                        <span><strong>Rayon və adres:</strong></span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="bTn mt-3">
                         <button type="submit" class="btn btn-outline-primary">Sifariş et</button>
                     </div>
                 </form>

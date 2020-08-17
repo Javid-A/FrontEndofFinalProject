@@ -348,6 +348,37 @@ $(document).ready(function() {
         $(this).prev().val(count)
     })
 
+    if ($("#Cart form #delivery").val() == "Metro") {
+        $("#Cart form .metros").removeClass("d-none")
+        $("#Cart form .city").addClass("d-none")
+        $("#Cart form .region").addClass("d-none")
+    } else if ($("#Cart form #delivery").val() == "City") {
+        $("#Cart form .metros").addClass("d-none")
+        $("#Cart form .city").removeClass("d-none")
+        $("#Cart form .region").addClass("d-none")
+    } else if ($("#Cart form #delivery").val() == "Region") {
+        $("#Cart form .metros").addClass("d-none")
+        $("#Cart form .city").addClass("d-none")
+        $("#Cart form .region").removeClass("d-none")
+    }
+
+    $("#Cart form #delivery").change(function() {
+        if ($(this).val().toString() == "Metro") {
+            $("#Cart form .metros").removeClass("d-none")
+            $("#Cart form .city").addClass("d-none")
+            $("#Cart form .region").addClass("d-none")
+        } else if ($(this).val().toString() == "Şəhər daxili") {
+            $("#Cart form .metros").addClass("d-none")
+            $("#Cart form .city").removeClass("d-none")
+            $("#Cart form .region").addClass("d-none")
+        } else if ($(this).val().toString() == "Rayon") {
+            $("#Cart form .metros").addClass("d-none")
+            $("#Cart form .city").addClass("d-none")
+            $("#Cart form .region").removeClass("d-none")
+        }
+        // console.log($(this).val())
+    })
+
     // Cart End
 
     // Waypoint Start
