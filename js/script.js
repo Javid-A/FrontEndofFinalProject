@@ -521,47 +521,18 @@ $(document).ready(function() {
         }, {
             offset: '95%'
         })
-    $('#BookOfMonth .cover-1')
+    $('#BookOfMonth .cover')
         .css('opacity', 0)
         .waypoint(function(direction) {
-            setTimeout(() => {
-                if (direction === 'down') {
-                    $(this.element).animate({ opacity: 1 }).addClass("animate__animated animate__fadeInUp")
-                } else {
-                    $(this.element).animate({ opacity: 0 }).removeClass("animate__animated animate__fadeInUp")
-                }
-            }, 150);
+            if (direction === 'down') {
+                $(this.element).animate({ opacity: 1 }).addClass("animate__animated animate__fadeInUp")
+            } else {
+                $(this.element).animate({ opacity: 0 }).removeClass("animate__animated animate__fadeInUp")
+            }
         }, {
             offset: '95%'
         })
 
-    $('#BookOfMonth .cover-2')
-        .css('opacity', 0)
-        .waypoint(function(direction) {
-            setTimeout(() => {
-                if (direction === 'down') {
-                    $(this.element).animate({ opacity: 1 }).addClass("animate__animated animate__fadeInUp")
-                } else {
-                    $(this.element).animate({ opacity: 0 }).removeClass("animate__animated animate__fadeInUp")
-                }
-            }, 300);
-        }, {
-            offset: '95%'
-        })
-
-    $('#BookOfMonth .cover-3')
-        .css('opacity', 0)
-        .waypoint(function(direction) {
-            setTimeout(() => {
-                if (direction === 'down') {
-                    $(this.element).animate({ opacity: 1 }).addClass("animate__animated animate__fadeInUp")
-                } else {
-                    $(this.element).animate({ opacity: 0 }).removeClass("animate__animated animate__fadeInUp")
-                }
-            }, 450);
-        }, {
-            offset: '95%'
-        })
 
     $('#newBooks .book-section .book')
         .css('opacity', 0)
